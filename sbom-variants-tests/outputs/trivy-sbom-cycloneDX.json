@@ -1,0 +1,60 @@
+2026-04-15T23:46:53Z	INFO	[vulndb] Need to update DB
+2026-04-15T23:46:53Z	INFO	[vulndb] Downloading vulnerability DB...
+2026-04-15T23:46:53Z	INFO	[vulndb] Downloading artifact...	repo="mirror.gcr.io/aquasec/trivy-db:2"
+79.25 KiB / 90.35 MiB [>_____________________________________________________________] 0.09% ? p/s ?239.25 KiB / 90.35 MiB [>____________________________________________________________] 0.26% ? p/s ?655.17 KiB / 90.35 MiB [>____________________________________________________________] 0.71% ? p/s ?1.48 MiB / 90.35 MiB [>_________________________________________________] 1.64% 2.34 MiB p/s ETA 37s3.76 MiB / 90.35 MiB [-->_______________________________________________] 4.17% 2.34 MiB p/s ETA 36s8.41 MiB / 90.35 MiB [---->_____________________________________________] 9.30% 2.34 MiB p/s ETA 35s14.34 MiB / 90.35 MiB [------->________________________________________] 15.87% 3.57 MiB p/s ETA 21s19.98 MiB / 90.35 MiB [---------->_____________________________________] 22.12% 3.57 MiB p/s ETA 19s26.33 MiB / 90.35 MiB [------------->__________________________________] 29.14% 3.57 MiB p/s ETA 17s31.95 MiB / 90.35 MiB [---------------->_______________________________] 35.37% 5.24 MiB p/s ETA 11s38.22 MiB / 90.35 MiB [-------------------->____________________________] 42.30% 5.24 MiB p/s ETA 9s43.84 MiB / 90.35 MiB [----------------------->_________________________] 48.52% 5.24 MiB p/s ETA 8s49.56 MiB / 90.35 MiB [-------------------------->______________________] 54.85% 6.79 MiB p/s ETA 6s55.40 MiB / 90.35 MiB [------------------------------>__________________] 61.32% 6.79 MiB p/s ETA 5s60.68 MiB / 90.35 MiB [-------------------------------->________________] 67.17% 6.79 MiB p/s ETA 4s66.34 MiB / 90.35 MiB [----------------------------------->_____________] 73.43% 8.16 MiB p/s ETA 2s72.51 MiB / 90.35 MiB [--------------------------------------->_________] 80.26% 8.16 MiB p/s ETA 2s77.85 MiB / 90.35 MiB [------------------------------------------>______] 86.17% 8.16 MiB p/s ETA 1s84.22 MiB / 90.35 MiB [--------------------------------------------->___] 93.22% 9.56 MiB p/s ETA 0s89.47 MiB / 90.35 MiB [------------------------------------------------>] 99.03% 9.56 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 9.56 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 9.60 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 9.60 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 9.60 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 8.98 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 8.98 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 8.98 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 8.40 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 8.40 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 8.40 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 7.86 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 7.86 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 7.86 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 7.35 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 7.35 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 7.35 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [----------------------------------------------->] 100.00% 6.88 MiB p/s ETA 0s90.35 MiB / 90.35 MiB [-------------------------------------------------] 100.00% 12.51 MiB p/s 7.4s2026-04-15T23:47:02Z	INFO	[vulndb] Artifact successfully downloaded	repo="mirror.gcr.io/aquasec/trivy-db:2"
+2026-04-15T23:47:02Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-04-15T23:47:02Z	INFO	Detected SBOM format	format="cyclonedx-json"
+2026-04-15T23:47:02Z	WARN	Third-party SBOM may lead to inaccurate vulnerability detection
+2026-04-15T23:47:02Z	WARN	Recommend using Trivy to generate SBOMs
+2026-04-15T23:47:02Z	WARN	Unsupported hash algorithm	algorithm="SHA-384"
+2026-04-15T23:47:02Z	WARN	Unsupported hash algorithm	algorithm="SHA3-384"
+2026-04-15T23:47:02Z	WARN	Unsupported hash algorithm	algorithm="SHA3-256"
+2026-04-15T23:47:02Z	WARN	Unsupported hash algorithm	algorithm="SHA3-512"
+2026-04-15T23:47:02Z	INFO	Number of language-specific files	num=1
+2026-04-15T23:47:02Z	INFO	[jar] Detecting vulnerabilities...
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "019d938a-8788-755c-a09f-dacea426824d",
+  "CreatedAt": "2026-04-15T23:47:02.664352471Z",
+  "ArtifactName": "/sbom-variants-tests/sboms/sbom-cycloneDX.cdx.json",
+  "ArtifactType": "cyclonedx",
+  "Results": [
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Packages": [
+        {
+          "ID": "com.mycompany.app:my-app:1.0-SNAPSHOT",
+          "Name": "com.mycompany.app:my-app",
+          "Identifier": {
+            "PURL": "pkg:maven/com.mycompany.app/my-app@1.0-SNAPSHOT?type=jar",
+            "UID": "8364d44e47d693d8",
+            "BOMRef": "pkg:maven/com.mycompany.app/my-app@1.0-SNAPSHOT?type=jar"
+          },
+          "Version": "1.0-SNAPSHOT",
+          "DependsOn": [
+            "uk.co.nichesolutions.logging.log4j:log4j-api:2.6.3-CUSTOM"
+          ]
+        },
+        {
+          "ID": "uk.co.nichesolutions.logging.log4j:log4j-api:2.6.3-CUSTOM",
+          "Name": "uk.co.nichesolutions.logging.log4j:log4j-api",
+          "Identifier": {
+            "PURL": "pkg:maven/uk.co.nichesolutions.logging.log4j/log4j-api@2.6.3-CUSTOM?type=jar",
+            "UID": "27c8a9198071640b",
+            "BOMRef": "pkg:maven/uk.co.nichesolutions.logging.log4j/log4j-api@2.6.3-CUSTOM?type=jar"
+          },
+          "Version": "2.6.3-CUSTOM",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Digest": "md5:8a79043fac32646e3d359c3c1e93c278"
+        }
+      ]
+    }
+  ]
+}

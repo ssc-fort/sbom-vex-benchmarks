@@ -1,0 +1,31 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://example.com/vex/lib1/CVE-2017-5645/1",
+  "author": "example",
+  "role": "author",
+  "timestamp": "2026-04-16T00:00:00Z",
+  "version": 1,
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://www.cve.org/CVERecord?id=CVE-2017-5645",
+        "name": "CVE-2017-5645",
+        "description": "log4j-core before 2.8.2 TcpSocketServer/UdpSocketServer deserialize log events from untrusted network sources without class filtering, enabling unauthenticated RCE."
+      },
+      "products": [
+        {
+          "@id": "pkg:maven/example/lib1@1.0-SNAPSHOT",
+          "subcomponents": [
+            {
+              "@id": "pkg:maven/org.apache.logging.log4j/log4j-core@2.8.1"
+            }
+          ]
+        }
+      ],
+      "timestamp": "2026-04-16T00:00:00Z",
+      "status": "not_affected",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "lib1 wraps TcpSocketServer only to expose it as a Runnable via AppenderFactory.createSocketServer(). lib1 itself never binds a socket, accepts connections, or deserializes network data — it only constructs and returns the server object. The deserialization RCE is only reachable if a caller actually starts the returned Runnable. lib1 alone does not trigger the vulnerable code path."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dynamic-reachability",
+  "description": "App calls through the Runnable interface. Concrete type TcpSocketServer is resolved at runtime via virtual dispatch from lib1.",
+  "cve": "CVE-2017-5645",
+  "artifact": "org.apache.logging.log4j:log4j-core:2.8.1",
+  "vulnerable-class": "org.apache.logging.log4j.core.net.server.TcpSocketServer",
+  "fix-commit": "https://github.com/apache/logging-log4j2/commit/5dcc19215827db29c993d0305ee2b0d8dd05939d",
+  "expected": "detected",
+  "expected-with-vex": "detected",
+  "minimum-detection-method": "class-hierarchy-analysis"
+}

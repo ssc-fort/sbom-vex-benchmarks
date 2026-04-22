@@ -1,0 +1,13 @@
+Warning: --sbom has been deprecated in favor of -L
+Starting filesystem walk for root: /
+Scanned /sbom-variants-tests/sboms/sbom-cycloneDX-with-variants.cdx.json file and found 1 package
+End status: 0 dirs visited, 1 inodes visited, 1 Extract calls, 887.791µs elapsed, 887.875µs wall time
+{
+  "results": [],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

@@ -1,0 +1,56 @@
+2026-04-15T23:47:02Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-04-15T23:47:02Z	INFO	Detected SBOM format	format="cyclonedx-json"
+2026-04-15T23:47:02Z	WARN	Third-party SBOM may lead to inaccurate vulnerability detection
+2026-04-15T23:47:02Z	WARN	Recommend using Trivy to generate SBOMs
+2026-04-15T23:47:02Z	WARN	Unsupported hash algorithm	algorithm="SHA-384"
+2026-04-15T23:47:02Z	WARN	Unsupported hash algorithm	algorithm="SHA3-384"
+2026-04-15T23:47:02Z	WARN	Unsupported hash algorithm	algorithm="SHA3-256"
+2026-04-15T23:47:02Z	WARN	Unsupported hash algorithm	algorithm="SHA3-512"
+2026-04-15T23:47:02Z	INFO	Number of language-specific files	num=1
+2026-04-15T23:47:02Z	INFO	[jar] Detecting vulnerabilities...
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "019d938a-87ab-73b7-aec5-2cac93afa3e9",
+  "CreatedAt": "2026-04-15T23:47:02.69924418Z",
+  "ArtifactName": "/sbom-variants-tests/sboms/sbom-cycloneDX-with-variants.cdx.json",
+  "ArtifactType": "cyclonedx",
+  "Results": [
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Packages": [
+        {
+          "ID": "com.mycompany.app:my-app:1.0-SNAPSHOT",
+          "Name": "com.mycompany.app:my-app",
+          "Identifier": {
+            "PURL": "pkg:maven/com.mycompany.app/my-app@1.0-SNAPSHOT?type=jar",
+            "UID": "8364d44e47d693d8",
+            "BOMRef": "pkg:maven/com.mycompany.app/my-app@1.0-SNAPSHOT?type=jar"
+          },
+          "Version": "1.0-SNAPSHOT",
+          "DependsOn": [
+            "uk.co.nichesolutions.logging.log4j:log4j-api:2.6.3-CUSTOM"
+          ]
+        },
+        {
+          "ID": "uk.co.nichesolutions.logging.log4j:log4j-api:2.6.3-CUSTOM",
+          "Name": "uk.co.nichesolutions.logging.log4j:log4j-api",
+          "Identifier": {
+            "PURL": "pkg:maven/uk.co.nichesolutions.logging.log4j/log4j-api@2.6.3-CUSTOM?type=jar",
+            "UID": "27c8a9198071640b",
+            "BOMRef": "pkg:maven/uk.co.nichesolutions.logging.log4j/log4j-api@2.6.3-CUSTOM?type=jar"
+          },
+          "Version": "2.6.3-CUSTOM",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Digest": "md5:8a79043fac32646e3d359c3c1e93c278"
+        }
+      ]
+    }
+  ]
+}

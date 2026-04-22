@@ -1,0 +1,86 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.3",
+  "creationInfo" : {
+    "created" : "2025-11-13T00:35:30Z",
+    "creators" : [ "Tool: spdx-maven-plugin" ],
+    "licenseListVersion" : "3.27.0"
+  },
+  "name" : "my-app",
+  "dataLicense" : "CC0-1.0",
+  "documentNamespace" : "http://spdx.org/spdxpackages/com.mycompany.app_my-app-1.0-SNAPSHOT",
+  "packages" : [ {
+    "SPDXID" : "SPDXRef--4b3779bf0",
+    "copyrightText" : "NOASSERTION",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/com.mycompany.app/my-app@1.0-SNAPSHOT",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : true,
+    "homepage" : "http://maven.apache.org",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "my-app",
+    "packageFileName" : "NOASSERTION",
+    "packageVerificationCode" : {
+      "packageVerificationCodeValue" : "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    "primaryPackagePurpose" : "LIBRARY",
+    "versionInfo" : "1.0-SNAPSHOT"
+  }, {
+    "SPDXID" : "SPDXRef--a133dd00",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache Log4j API",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/uk.co.nichesolutions.logging.log4j/log4j-api@2.6.3-CUSTOM",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "http://logging.apache.org/log4j/2.x/log4j-api/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Log4j API",
+    "originator" : "Organization:Apache Software Foundation",
+    "summary" : "The Apache Log4j API",
+    "versionInfo" : "2.6.3-CUSTOM"
+  }, {
+    "SPDXID" : "SPDXRef--195e86200",
+    "copyrightText" : "UNSPECIFIED",
+    "description" : "The Apache Log4j Implementation",
+    "downloadLocation" : "NOASSERTION",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:maven/org.apache.logging.log4j/log4j-core@2.10.0",
+      "referenceType" : "purl"
+    } ],
+    "filesAnalyzed" : false,
+    "homepage" : "https://logging.apache.org/log4j/2.x/log4j-core/",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "Apache-2.0",
+    "name" : "Apache Log4j Core",
+    "originator" : "Organization:The Apache Software Foundation",
+    "summary" : "The Apache Log4j Implementation",
+    "versionInfo" : "2.10.0"
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-DOCUMENT",
+    "relationshipType" : "DESCRIBES",
+    "relatedSpdxElement" : "SPDXRef--4b3779bf0",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef--4b3779bf0",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef--a133dd00",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  },{
+    "spdxElementId" : "SPDXRef-1badcb750",
+    "relationshipType" : "hasVariant",
+    "relatedSpdxElement" : "SPDXRef--195e86200",
+    "comment" : "Relationship based on LicenseShadeDetector clone detection"
+  }
+  ]
+}

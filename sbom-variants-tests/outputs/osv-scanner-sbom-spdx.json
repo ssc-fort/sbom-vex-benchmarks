@@ -1,0 +1,13 @@
+Warning: --sbom has been deprecated in favor of -L
+Starting filesystem walk for root: /
+Scanned /sbom-variants-tests/sboms/sbom-spdx.spdx.json file and found 2 packages
+End status: 0 dirs visited, 1 inodes visited, 1 Extract calls, 538µs elapsed, 538.125µs wall time
+{
+  "results": [],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}
